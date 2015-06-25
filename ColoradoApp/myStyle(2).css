@@ -1,0 +1,174 @@
+﻿.slideshow {
+    max-width:400px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -7.5%;
+}
+    .slideshow div {
+        width: 100%;
+       display: inline-block;
+       display: none;
+    }
+
+    .slideshow img {
+    width: 100%;
+    height: auto;
+    }
+
+button {
+position: absolute;
+}
+
+.next {
+top: 25%;
+right: 5px;
+z-index: 5;
+}
+
+.prev {
+top: 25%;
+left: 5px;
+z-index: 5;
+}
+
+.content {
+padding-top: 20px;
+font-family: 'Abril Fatface', cursive;
+text-align: center;
+}
+
+.places {
+margin-top: -60px;
+background-color: black;
+opacity: 0.6;
+color: white;
+font-style: italic;
+}
+
+.title {
+text-align: center;
+font-weight: bolder;
+color: lightblue;
+font-size: 30px;
+font-family: 'Abril Fatface', cursive;
+background-color:black;
+height: 100px;
+padding-top: 40px;
+position: relative;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+    border: none;
+}
+    button:hover {
+    color: black;
+    }
+
+    div.title p {
+    margin: 0;
+    top:50%;
+    transform: translate(0,-50%);
+    }
+
+.sub {
+font-size:18px;
+color: white;
+background-color:black;
+font-family: 'Abril Fatface', cursive;
+}
+
+.head {
+width: 100%;
+background-color: black;
+text-align: center;
+}
+
+.content {
+font-family: 'Abril Fatface', cursive;
+color: black;
+}
+.map iframe {
+    border: solid black groove;
+    height: 200px;
+}
+h1 {
+
+}
+.footer-container {
+    text-align: center;
+
+}
+.imgFormat {
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius: 50%;
+    border: 30px solid blue;
+}
+
+.allData {
+height: 100%;
+display: inline-block;
+padding-bottom: 15px;
+}
+
+.datainfo {
+    font-family: 'Abril fatface', cursive;
+    color: #6699FF;
+    font-size: medium;
+    text-align: center;
+
+}
+.dataabout {
+    font-family: 'Abril fatface', cursive;
+}
+
+.dataLikes, .dataDislikes {
+     background: lightblue ;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+     line-height: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 -30px 0 40px;
+    text-align: center;
+    font-weight: 200;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background 500ms;
+    float: left;
+}
+    .dataLikes:hover, .dataDislikes:hover {
+        color: lightblue;
+        background: white;
+        opacity: 0.5; 
+
+    }
+.likes {
+    float: right;
+    padding-right: 50px;
+}
+
+.dx-slideoutview-menu-content .dx-scrollview-content {
+background-color: lightblue;
+}
+
+.review {
+    margin-left: 25%;
+    background:lightblue;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Abril fatface', cursive;
+}
+
+
+   
+
+

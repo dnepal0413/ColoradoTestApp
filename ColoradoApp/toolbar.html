@@ -1,0 +1,11 @@
+<div class="navbar" ng-controller="ToolbarCtrl as toolbar" dx-toolbar="{
+    items: [
+        { location: 'before', widget: 'button', options: {
+                icon: 'menu',
+                onClick: toolbar.toggleMenu
+            }
+        },
+        { location: 'center' }
+    ],
+    bindingOptions: { 'items[1].text': 'toolbar.title' }
+    }"></div>

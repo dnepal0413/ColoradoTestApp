@@ -1,0 +1,80 @@
+<script>
+    var currentIndex = 0,
+items = $('.slideshow div'),
+itemAmt = items.length;
+
+    function cycleItems() {
+        
+        var item = $('.slideshow div').eq(currentIndex);
+        items.hide();
+        item.css('display', 'inline-block');
+        
+    }
+
+    var autoSlide = setInterval(function () {
+        currentIndex += 1;
+        if (currentIndex > itemAmt - 1) {
+            currentIndex = 0;
+        }
+        cycleItems();
+    }, 5000);
+
+    $('.next').click(function () {
+        clearInterval(autoSlide);
+        currentIndex += 1;
+        if (currentIndex > itemAmt - 1) {
+            currentIndex = 0;
+        }
+        cycleItems();
+    });
+
+    $('.prev').click(function () {
+        clearInterval(autoSlide);
+        currentIndex -= 1;
+        if (currentIndex < 0) {
+            currentIndex = itemAmt - 1;
+        }
+        cycleItems();
+    });
+
+</script>
+
+<div ng-include="'partials/toolbar.html'"></div>
+<div class="view-content" dx-scroll-view>
+<div class="title"><p>Colorado<span class="sub">Attractions</span></p></div> 
+<section class="demo">
+    <button class="prev"> < </button>
+    <button class="next"> > </button>
+    <div class="slideshow">
+    <div style="display: inline-block;">
+            <img src="images/denver.jpg" />
+        <p class="places">Denver</p>
+    </div>
+     <div>
+            <img src="images/boulder.jpg" /> 
+          <p class="places">Boulder</p>
+    </div>
+     <div>
+            <img src="images/estes.jpg" />
+          <p class="places">Estes Park</p>
+    </div>
+     <div>
+            <img src="images/rocky.jpg" />
+          <p class="places">Rocky Mountain National Park</p>
+    </div>
+    </div>
+    </section>    
+
+    <div class="content">
+        Discover the best places in Colorado through our App. Go head and explore the places we have listed in the top left corner!
+        <br /> <br />
+        Thank you for visiting our site.
+    </div>
+
+<footer> <hr /> 
+        <div class="footer-container">
+            &copy 2015 Deepak and Yasna All Rights Reserved
+
+        </div>
+    </footer>
+</div>
